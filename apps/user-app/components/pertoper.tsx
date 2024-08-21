@@ -1,6 +1,6 @@
 import { Card } from "@repo/ui/card"
 
-export const P2PTransfer = ({
+export const Pe2PeTransfer = ({
     transfer
 }: {
     transfer: {

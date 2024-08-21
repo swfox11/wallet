@@ -2,7 +2,7 @@ import prisma from "@repo/db/client";
 import { AddMoney } from "../../../components/AddMoneyCard";
 import { BalanceCard } from "../../../components/BalanceCard";
 import { OnRampTransactions } from "../../../components/OnRampTransactions";
-import { P2PTransfer } from "../../../components/p2pTransfer"
+import { Pe2PeTransfer } from "../../../components/pertoper"
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../lib/auth";
 import { redirect } from 'next/navigation'
@@ -69,7 +69,7 @@ export default async function() {
             
                 
                 <div className="pt-4">
-                    <P2PTransfer transfer={transfer}></P2PTransfer>
+                    <Pe2PeTransfer transfer={transfer}></Pe2PeTransfer>
                     
                 </div>
                 <div className="pt-4">

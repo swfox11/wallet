@@ -22,9 +22,11 @@ export function SendCard() {
                     }} />
                     <div className="pt-4 flex justify-center">
                         <Button onClick={async () => {
-                           const res= await p2pTransfer(number, Number(amount) * 100);
-                           const msg=res?.message;
-                           setMessage(msg);
+                           const res=await p2pTransfer(number, Number(amount) * 100);
+                           if (res?.message) {
+                            setMessage(res.message);
+                           }
+                           
                         }}>Send</Button>
                     </div>
                     <div className="flex justify-center">

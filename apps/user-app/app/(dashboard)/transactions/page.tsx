@@ -4,7 +4,7 @@ import { BalanceCard } from "../../../components/BalanceCard";
 import { OnRampTransactions } from "../../../components/OnRampTransactions";
 import { Pe2PeTransfer } from "../../../components/pertoper"
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../lib/auth";
+import { authOptions } from "../../lib/auth"; 
 import { redirect } from 'next/navigation'
 
 async function getBalance() {

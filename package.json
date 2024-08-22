@@ -5,6 +5,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "start-user-app": "cd apps/user-app && npm run start",
+    "start-bank-webhook": "cd apps/bank-webhook && npm run start",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
@@ -13,6 +15,7 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
+
   "engines": {
     "node": ">=18"
   },

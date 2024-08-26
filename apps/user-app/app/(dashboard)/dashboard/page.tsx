@@ -54,7 +54,7 @@ export default async function() {
               Dashboard
             </div>
             <div className="text-xl text-[#8d54aa]">
-              USER: {session.user.name ||session.user.email}
+              {session.user.name ||session.user.email}
             </div>
              
 
